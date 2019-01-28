@@ -59,6 +59,7 @@ int main()
     stack = malloc(sizeof(my_stack_t));
 	msg = malloc(sizeof(char)*MAX);
 	int pid = fork();
+    pipe(p);
     while(1)
     {
         if (pid == 0) {
